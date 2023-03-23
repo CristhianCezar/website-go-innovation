@@ -26,12 +26,12 @@ h1 {
 
 .header .circle {
     background-color: var(--gray-light);
-    width: 1100px;
-    height: 1100px;
-    border-radius: 50%;
+    width: 700px;
+    height: 500px;
     position: absolute;
-    right: -500px;
-    top: -700px;
+    right: 0;
+    top: 0;
+    border-bottom-left-radius: 100%;    
 }
 
 .header .navbar {

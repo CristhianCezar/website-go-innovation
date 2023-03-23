@@ -6,13 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/patterns.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="shortcut icon" href="img/Logotipo-fundo-branco.png" type="image/x-icon">
     <title>Go Innovation</title>
 </head>
-<body>
+<body onload="awaitLoader()">
+    <script src="js/await-loader.js"></script>    
 
-    <header class="header">
-        <div class="circle"></div>
+    <div class="hidden-loading" id="loading" >
+        <svg class="wheel">
+            <defs>
+                <filter id="wheel">
+                    <feGaussianBlur
+                        in="SourceGraphic" 
+                        stdDeviation="7" 
+                        result="blur">
+                    </feGaussianBlur>
+                    <feColorMatrix 
+                        in="blur" 
+                        mode="matrix" 
+                        values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" 
+                        result="wheel">
+                    </feColorMatrix>
+                    <feComposite 
+                        in="SourceGraphic" 
+                        in2="wheel" 
+                        operator="atop">
+                    </feComposite>
+                </filter>
+            </defs>
+        </svg>
+        <svg class="spinner" width="200" height="200" viewBox="0 0 200 200">
+            <defs>
+                <linearGradient id="linearGradient">
+                    <stop class="stop1" offset="0"></stop>
+                    <stop class="stop2" offset="1"></stop>
+                </linearGradient>
+                <linearGradient 
+                    y2="160" 
+                    x2="160" 
+                    y1="40" 
+                    x1="40" 
+                    gradientUnits="userSpaceOnUse" 
+                    id="gradient" 
+                    xlink:href="#linearGradient">
+                </linearGradient>
+            </defs>
+            <path 
+                class="the-half" 
+                d="m 164,100 c 0,-35.346224 -28.65378,-64 -64,-64 -35.346224,0 -64,28.653776 -64,64 0,35.34622 28.653776,64 64,64 35.34622,0 64,-26.21502 64,-64 0,-37.784981 -26.92058,-64 -64,-64 -37.079421,0 -65.267479,26.922736 -64,64 1.267479,37.07726 26.703171,65.05317 64,64 37.29683,-1.05317 64,-64 64,-64">
+            </path>
+            <circle 
+                class="stretch" 
+                cx="100" 
+                cy="100" 
+                r="64">
+            </circle>
+        </svg>
+    </div>
+
+    <header class="header no-loading" onload="awaitLoader()">
+            <div class="circle"></div>
         <nav class="navbar">
             <div class="logo">
                 <img src="img/Logotipo-fundo-branco.png" alt="logomarca com as letras G e I, dentro das letras está escrito go innovation">
@@ -48,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right-side">
+            <div class="right-side" id="right-side">
                 <div class="right-container">
                     <a href="#">
                         <img src="img/modelo-nougoy.jpg" alt="Landing Page para gerenciamento bancário">
@@ -85,6 +139,6 @@
             </div>
         </div>
     </header>
-    
+
 </body>
 </html>
