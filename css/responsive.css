@@ -1,0 +1,138 @@
+@media (max-width: 1400px) {
+    .header .circle {
+        width: 600px;
+        height: 450px;
+    }
+    
+} 
+
+@media (max-width: 1100px) {
+    .header .circle {
+        width: 550px;
+        height: 400px;
+    }
+
+    .bottom .information .value-inside {
+        width: 56px;
+        height: 56px;
+    }
+    .bottom .information:nth-child(5) .value-inside {
+        font-size: 20px;
+    }
+
+} 
+
+
+@media (max-width: 1000px) {
+    .header .circle {
+        width: 520px;
+        height: 420px;
+    }
+
+    .left-side .left-container h1 {
+        font-size: 24px;
+    }
+
+    .left-side .left-container .btn-container a {
+        padding: 8px 40px;
+    }    
+} 
+
+@media (max-width: 950px) {
+    .bottom .information .description {
+        font-size: 16px;
+    }
+    
+} 
+
+@media (max-width: 900px) {
+    .header .circle {
+        width: 510px;
+        height: 400px;
+    }
+} 
+
+@media (max-width: 850px) {
+    .right-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-container .slide {
+        position: absolute;
+        height: 280px;
+        width: 250px;
+        opacity: 0;
+        transition: opacity 1000ms;
+    }
+
+    .right-container a.selected {
+        opacity: 1;
+    }
+
+    .bottom .information .description {
+        font-size: 14px;
+    }
+
+    .bottom .information .value-inside {
+        width: 48px;
+        height: 48px;
+    }
+
+    .bottom .information:nth-child(5) .value-inside {
+        font-size: 16px;
+    }
+    
+} 
+
+@media (max-width: 800px) {
+    .bottom .information .value-inside {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .bottom .information:nth-child(5) .value-inside {
+        width: 48px;
+        height: 48px;
+    }
+
+    
+    .bottom .information .description {
+        font-size: 13.2px;
+    }
+    
+} 
+
+@media (max-width: 500px) {
+    
+    
+}
+
+@media (max-width: 450px) {
+    
+    
+} 
+
+@media (max-width: 400px) {
+    
+    
+} 
+
+@media (max-width: 380px) {
+    
+    
+} 
+
+
+@media (max-width: 350px) {
+    
+    
+} 
+
+@media (max-width: 300px) {
+    
+    
+} 
