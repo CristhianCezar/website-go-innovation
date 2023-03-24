@@ -14,7 +14,7 @@ h1 {
 }
 
 
-/* HEADER */
+/* ------- HEADER ------- */
 .header {
     background-color: var(--white-primary);
     width: 100%;
@@ -61,7 +61,7 @@ h1 {
 
 
 
-/* HEADER SIDES */
+/* ------- HEADER SIDES ------- */
 .header .header-sides {
     width: 90%;
     display: flex;
@@ -71,7 +71,7 @@ h1 {
 
 
 
-/* HEADER LEFT SIDE */
+/* ------- HEADER LEFT SIDE -------*/
 .left-side {
     width: 48%;
     display: flex;
@@ -111,7 +111,7 @@ h1 {
 
 
 
-/* HEADER RIGHT SIDE */
+/* ------- HEADER RIGHT SIDE -------*/
 .right-side {
     width: 48%;
     z-index: 1;
@@ -130,11 +130,10 @@ h1 {
 
 
 
-/* HEADER PART OF BOTTOM */
+/* ------- HEADER PART OF BOTTOM ------- */
 .header .bottom {
     background-color: var(--blue-primary);
     width: 100%;
-    padding: 8px 0;
     margin-top: 72px;
     display: flex;
     gap: 56px;
@@ -175,5 +174,204 @@ h1 {
     background-color: var(--gree-primary);
     color: var(--black-primary);
 }
+
+
+
+/* ------- MAIN -------- */
+.main {
+    background-color: var(--blue-primary);
+    width: 100%;
+    height: 100vh;
+}
+
+.main .container-main {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    color: var(--white-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+
+.container-main .description-main {
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container-main .description-main .title-main {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.container-main .description-main .subtitle-main {
+    font-weight: 400;
+}
+
+.main .services-main {
+    display: flex;
+    gap: 100px;
+}
+
+.main .container-main .link-service img {
+    border-radius: 12px;
+    width: 300px;
+    height: 350px;
+}
+
+.main .container-main .link-service img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.container-main .btn-link .link-explore {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 4px 0 8px 0;
+    color: var(--white-primary);
+    border-bottom: 1px solid var(--white-primary);
+    width: fit-content;
+}
+
+.container-main .btn-link .link-explore:hover {
+    border-bottom: 1px solid var(--gray-primary);
+
+}
+
+.container-main .btn-link .link-explore img {
+    width: 12px;
+    margin-top: 3px;
+
+}
+
+.services-main .container-services {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.services-main .container-services .title-service {
+    font-weight: 100;
+}
+
+.services-main .container-services .btn-link p {
+    font-weight: bold;
+}
+
+
+
+/* ------ SECTION INFORMATION ------  */
+section.information {
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-primary);
+}
+
+section .container-information {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 185px;
+    margin-top: 120px;
+}
+
+section .container-information .information-left img {
+    width: 500px;
+    height: 400px;
+    border-radius: 32px;
+}
+
+section .container-information .information-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .container-information .information-right {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+section .container-information h2 {
+    font-weight: 500;
+}
+
+.container-information .information-right li img {
+    width: 36px;
+}
+
+.container-information .information-right li {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.container-information .information-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container-information .information-right a {
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 56px;
+    color: var(--white-primary);
+    background-color: var(--blue-primary);
+}
+
+.information .information-down {
+    display: flex;
+    gap: 185px;
+}
+
+.information-down .information-left {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.information .information-down li img {
+    width: 32px;
+    height: 32px;
+}
+
+.information .information-down li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.information .information-down ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information-down .information-left a {
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 56px;
+    color: var(--white-primary);
+    background-color: var(--blue-primary);
+}
+
+.information .information-down .information-right img {
+    width: 500px;
+    height: 400px;
+    border-radius: 32px;
+}
+
+
+
+
+
+
 
 
